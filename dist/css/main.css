@@ -15,26 +15,6 @@ html {
   font-size: 62.5%;
 }
 
-button {
-  font: inherit;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html:focus-within {
-    scroll-behavior: auto;
-  }
-
-  *,
-*::before,
-*::after {
-    -webkit-animation-duration: 0.01ms !important;
-            animation-duration: 0.01ms !important;
-    -webkit-animation-iteration-count: 1 !important;
-            animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
 .attribution {
   width: 100vw;
   margin: 2rem auto;
@@ -220,12 +200,12 @@ button {
 .social__item a {
   margin-top: 0.3rem;
   color: hsl(0deg, 0%, 100%);
-  font-size: 2.7rem;
+  font-size: 27px;
 }
 @media (min-width: 80em) {
   .social__item a {
     margin-top: 0;
-    font-size: 1.8rem;
+    font-size: 18px;
   }
 }
 
