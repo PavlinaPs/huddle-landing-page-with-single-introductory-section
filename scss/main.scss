@@ -1,6 +1,16 @@
 @use 'index' as *;
 @use 'attribution';
 
+@media (min-width: $desktop) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+}
+
 .landing {
     width: 75rem;
     margin: 0 auto;
@@ -11,15 +21,47 @@
     background-image: url(../../images/bg-mobile.svg);
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media (min-width: $desktop) {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-areas: 
+            'logo logo'
+            'img text'
+            'social social';
+        width: 144rem;
+        height: 80rem;
+        margin: 0;
+        padding: 5.2rem 8rem 8rem 7.3rem;
+        background-image: url(../../images/bg-desktop.svg);
+    }
 }
 
 .landing__logo {
+    grid-area: logo;
     width: 26rem;
     margin-left: -0.5rem; 
+
+    @media (min-width: $desktop) {
+        width: 22rem;
+    }
 }
 
 .landing__illustration {
+    grid-area: img;
     margin-top: 12.1rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 8.4rem;
+    }
+}
+
+.intro {
+    grid-area: text;
+
+    @media (min-width: $desktop) {
+        margin-left: -1rem;
+    }
 }
 
 .intro__title {
@@ -28,6 +70,11 @@
     font-size: $fs-heading;
     font-weight: $fw-semiBold;
     
+    @media (min-width: $desktop) {
+        margin-top: 12.8rem;
+        font-size: $fs-heading-desktop;
+        text-align: left;
+    }
 }
 
 .intro__text {
@@ -36,6 +83,13 @@
     font-size: $fs-normal;
     font-weight: $fw-regular;
     line-height: 1.5;
+
+    @media (min-width: $desktop) {
+        margin-top: 2rem;
+        padding-right: 1rem;
+        font-size: $fs-normal-desktop;
+        text-align: left;
+    }
 }
 
 .intro__register {
@@ -55,6 +109,13 @@
     border-radius: 4.1rem;
     box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.3);
     cursor: pointer;
+
+    @media (min-width: $desktop) {
+        width: 20rem;
+        height: 6rem;
+        margin: 2.2rem 0 0;
+        font-size: $fs-register-desktop;
+    }
 }
 
 .intro__register a {
@@ -72,11 +133,17 @@
 }
 
 .social {
+    grid-area: social;
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin: 12.8rem auto 0;
     list-style-type: none;
+
+    @media (min-width: $desktop) {
+        margin: 2.2rem 0 0 auto;
+        gap: 1.6rem;
+    }
 }
 
 .social__item {
@@ -87,6 +154,12 @@
     height: 5.6rem;
     border: 0.2rem solid $clr-white;
     border-radius: 50%;
+
+    @media (min-width: $desktop) {
+        width: 4rem;
+        height: 4rem;
+        border: 0.1rem solid $clr-white;
+    }
 }
 
 .social__item:hover,
@@ -98,6 +171,11 @@
     margin-top: 0.3rem;
     color: $clr-white;
     font-size: 2.7rem;
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
 }
 
 .social__item:hover a,
