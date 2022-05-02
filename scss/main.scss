@@ -103,7 +103,6 @@
     font-family: $ff-heading;
     font-size: $fs-small;
     font-weight: $fw-regular;
-    color: $clr-violet;
     background-color: $clr-white;
     border: 0.1rem solid $clr-violet;
     border-radius: 4.1rem;
@@ -119,6 +118,7 @@
 }
 
 .intro__register a {
+    color: $clr-violet;
     text-decoration: none;
 }
 
