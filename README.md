@@ -54,11 +54,11 @@ Users should be able to:
 
 ### What I learned
 
-I only ran in one issue in this challenge. Nesting pseudo-classes :hover and :focus didn't work. I coded it as I would have in css without Sass.
+I only ran into one issue in this challenge. Nesting pseudo-classes :hover and :focus didn't work. I coded it as I would have in css without Sass.
 
 ### Continued development
 
-I need to find out what went on and how I can nest pseudo-classes in Sass.
+I need to find out what went on and if and how I can nest pseudo-classes in Sass.
 
 ### Useful resources
 
