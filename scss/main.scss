@@ -1,0 +1,110 @@
+@use 'index' as *;
+@use 'attribution';
+
+.landing {
+    width: 75rem;
+    margin: 0 auto;
+    padding: 6.2rem 7.3rem 8rem;
+    color: $clr-white;
+    text-align: center;
+    background-color: $clr-violet;
+    background-image: url(../../images/bg-mobile.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.landing__logo {
+    width: 26rem;
+    margin-left: -0.5rem; 
+}
+
+.landing__illustration {
+    margin-top: 12.1rem;
+}
+
+.intro__title {
+    margin-top: 12rem;
+    font-family: $ff-heading;
+    font-size: $fs-heading;
+    font-weight: $fw-semiBold;
+    
+}
+
+.intro__text {
+    margin-top: 2.6rem;
+    font-family: $ff-body;
+    font-size: $fs-normal;
+    font-weight: $fw-regular;
+    line-height: 1.5;
+}
+
+.intro__register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40rem;
+    height: 8.2rem;
+    margin: 4.7rem auto 0;
+    padding-top: 0.2rem;
+    font-family: $ff-heading;
+    font-size: $fs-small;
+    font-weight: $fw-regular;
+    color: $clr-violet;
+    background-color: $clr-white;
+    border: 0.1rem solid $clr-violet;
+    border-radius: 4.1rem;
+    box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.3);
+    cursor: pointer;
+}
+
+.intro__register a {
+    text-decoration: none;
+}
+
+.intro__register:hover,
+.intro__register:focus {
+    background-color: $clr-soft-magenta;
+}
+
+.intro__register:hover a,
+.intro__register:focus a {
+    color: $clr-white;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 12.8rem auto 0;
+    list-style-type: none;
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5.6rem;
+    height: 5.6rem;
+    border: 0.2rem solid $clr-white;
+    border-radius: 50%;
+}
+
+.social__item:hover,
+.social__item:focus {
+    border: 0.2rem solid $clr-soft-magenta;
+}
+
+.social__item a {
+    margin-top: 0.3rem;
+    color: $clr-white;
+    font-size: 2.7rem;
+}
+
+.social__item:hover a,
+.social__item:focus a {
+    color: $clr-soft-magenta;
+}
+
+.social__item i {
+    margin-top: 0.3rem;
+}
